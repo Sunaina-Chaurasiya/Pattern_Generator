@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+p {
+    color: #777;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+#ctrl {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.controls label {
+    margin: 10px 0 5px;
+}
+
+#box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#box button {
+    flex: 1;
+    margin-right: 10px;
+}
+
+#box button:last-child {
+    margin-right: 0;
+}
+
+.controls select, .controls input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.controls button {
+    cursor: pointer;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#generate {
+    background-color: lightseagreen;
+    color: white;
+    border: none;
+    border-radius: 2px;
+}
+
+#copy {
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    border-radius: 2px;
+}
+
+#show-code {
+    background-color: lightseagreen;
+    color: white;
+    border: none;
+    border-radius: 2px;
+}
+
+#clear {
+    background-color: #fff;
+    color: crimson;
+    border: 1px solid crimson;
+    border-radius: 2px;
+}
+
+.animate-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.animate-controls input[type="checkbox"] {
+    margin-bottom: 5px;
+}
+
+.animate-controls input[type="number"] {
+    margin-top: 5px;
+}
+
+.pattern-output-container {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+}
+
+.pattern-output-container label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.pattern-output {
+    border: 1px solid #ccc;
+    height: 200px;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 5px;
+    background-color: #f9f9f9;
+    font-family: monospace;
+    white-space: pre;
+    overflow: auto;
+}
+
+ #box button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#box button i {
+    margin-right: 5px;
+} 

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Patterns</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Generate Patterns</h1>
+        <p>Pattern generator revise your coding pattern in easy way</p>
+        <div class="content">
+            <div class="controls" id="ctrl">
+                <label for="pattern-type">Select Pattern</label>
+                <select id="pattern-type">
+                    <option value="">Select</option>
+                    <option value="triangle">Triangle</option>
+                    <option value="rectangle">Rectangle</option>
+                    <option value="hollow-rectangle">Hollow Rectangle</option>
+                </select>
+                <label for="pattern-size">Pattern Size</label>
+                <input type="number" id="pattern-size" placeholder="Size e.g. 5">
+                <div class="animate-controls">
+                    <input type="checkbox" id="animate" checked>
+                    <label for="animate">Animate (seconds)</label>
+                    <input type="number" id="delay" placeholder="Delay e.g. 0.1" step="0.1">
+                </div>
+            </div>
+            
+            <div class="pattern-output-container">
+                <label for="pattern-output">Pattern</label>
+                <div class="pattern-output" id="pattern-output">
+                    <!-- Generated pattern will be displayed here -->
+                </div>
+            </div>
+        </div>
+        <div class="controls" id="box">
+                    <button id="generate"><i style="font-size:24px" class="fa">&#xf04b;</i> Generate</button>
+                    <button id="copy"><i style="font-size:24px" class="fa">&#xf0c5;</i> Copy</button>
+                    <button id="show-code"><i style='font-size:24px' class='fa'>&#xf121;</i> Show Code</button>
+                    <button id="clear"><i style="font-size:24px" class="fa">&#xf014;</i> Clear</button>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
