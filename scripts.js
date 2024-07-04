@@ -32,9 +32,6 @@ function generatePattern() {
                 }
             }
             break;
-        default:
-            pattern = 'Please select a pattern type and size.';
-            break;
     }
 
     if (animate) {
